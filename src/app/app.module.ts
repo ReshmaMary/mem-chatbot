@@ -19,6 +19,7 @@ import { ChatComponent } from './components/chat/chat.component';
     MaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ChatComponent]
 })
 export class AppModule { }
