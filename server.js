@@ -6,7 +6,7 @@ const path = require('path');
 // in the dist directory
 app.use(express.static(__dirname + '/dist'));
 app.use(function(req, res){
-    res.sendFile(path.join(__dirname, '/dist', 'index.html'));
+    res.sendFile(path.join(__dirname, '/dist/MEMChatbot', 'index.html'));
 
     //res.sendFile(path.join(__dirname + '/dist/MEMChatbot/index.html'));
    // res.sendfile(_dirname+'/dist/MEMChatbot/index.html');
