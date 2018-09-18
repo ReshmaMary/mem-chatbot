@@ -5,12 +5,12 @@ const path = require('path');
 // Run the app by serving the static files
 // in the dist directory
 app.use(express.static(__dirname + '/dist'));
-app.use(function(req, res){
+/*app.use(function(req, res){
     res.sendFile(path.join(__dirname, '/dist/MEMChatbot', 'index.html'));
 
     //res.sendFile(path.join(__dirname + '/dist/MEMChatbot/index.html'));
    // res.sendfile(_dirname+'/dist/MEMChatbot/index.html');
-});
+});*/
 // Start the app by listening on the default
 // Heroku port
 app.listen(process.env.PORT || 8080);
