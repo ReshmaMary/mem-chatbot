@@ -10,14 +10,15 @@
 
 mat-list {
     height:500px;
-    max-height: 60%;
+    max-height: 80%;
     overflow-y: scroll;
 }
 
 mat-icon {
-    color: rgba(65, 30, 97, 0.979);
+    color: rgba(69, 32, 104, 0.979);
     cursor: pointer;
 }
+
 
 form {
     position: fixed;

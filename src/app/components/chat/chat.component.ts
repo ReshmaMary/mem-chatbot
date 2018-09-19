@@ -12,7 +12,9 @@ export class ChatComponent {
 
   conversation: IMessage[] = [];
   payloadintents = ["numem.admissions.deadlines","numem.program","numem.admission.requirements",
-"numem.admission.online","numem.tuition.cost","numem.stem","numem.curriculum","numem.course.catalog"];
+"numem.admission.online","numem.tuition.cost","numem.stem","numem.curriculum","numem.course.catalog",
+"numem.information.session","numem.faculty","numem_whymem","numem.whoapply","numem.studyoptions",
+"numem_career"];
   
   addMessageFromUser(message) {
     this.conversation.push({
