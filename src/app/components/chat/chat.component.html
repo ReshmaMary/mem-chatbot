@@ -1,3 +1,10 @@
+<div id="northwestern-logo-wrapper-outer">
+    <div id="northwestern-logo-wrapper"><a href="http://www.northwestern.edu" id="northwestern-logo" target="_blank">
+      <img alt="Northwestern University" class="desktop" src="https://www.mccormick.northwestern.edu/images/structure/sprites/northwestern-logo-global-nav.svg">
+      <img alt="Northwestern University" class="mobile" src="https://images/structure/sprites/northwestern-logo-global-nav-small.svg"></a>
+    </div>
+</div>
+<div style="overflow: scroll; height: 500;" #scrollMe [scrollTop]="scrollMe.scrollHeight">
 <mat-list>
   <mat-list-item *ngFor="let message of conversation">
     <mat-icon matListIcon>{{ message.avatar }}</mat-icon>
@@ -10,13 +17,15 @@
     </p>
   </mat-list-item>
 </mat-list>
+</div>
 <mat-divider></mat-divider>
 <form class="example-form">
+  
   <mat-form-field class="example-full-width">
+    <mat-icon matListIcon>chat</mat-icon>
     <input matInput 
            #message 
            maxlength="256" 
-           placeholder="Message" 
            (keyup.enter)="addMessageFromUser(message)">
     <mat-icon matSuffix (click)="addMessageFromUser(message)">send</mat-icon>
   </mat-form-field>

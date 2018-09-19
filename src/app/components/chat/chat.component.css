@@ -1,21 +1,28 @@
 .example-form {
     min-width: 150px;
-    max-width: 500px;
+    max-width: 800px;
     width: 100%;
 }
 
 .example-full-width {
     width: 100%;
 }
+.chat {
+    list-style: none;
+    background: none;
+    top:60px;
+    height: 80vh; 
+    width: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+}
 
 mat-list {
-    height:500px;
-    max-height: 80%;
-    overflow-y: scroll;
+    height:90%;
 }
 
 mat-icon {
-    color: rgba(69, 32, 104, 0.979);
+    color:#4E2A84;
     cursor: pointer;
 }
 
@@ -29,6 +36,41 @@ form {
 ::ng-deep .mat-list .mat-list-item .mat-line{
    word-wrap: break-word;
    white-space: pre-wrap;
+}
+#northwestern-logo-wrapper-outer {
+    background-color: #4E2A84;
+}
+
+#northwestern-logo-wrapper {
+    padding-left: 1px;
+}
+
+#northwestern-logo {
+    width: 225px;
+    height: 21px;
+    margin-top: 8px !important;
+    margin-bottom: 4px !important;
+    box-sizing: content-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#northwestern-logo img,
+#northwestern-logo svg {
+    display: block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY( -50% );
+    -ms-transform: translateY( -50% );
+    transform: translateY( -50% );
+}
+
+#northwestern-logo .desktop {
+    /* display: block; */
+}
+
+#northwestern-logo .mobile {
+    display: none;
 }
 /*
 ::ng-deep .mat-list .mat-list-item{

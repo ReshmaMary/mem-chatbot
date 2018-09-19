@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
+
 
 import { client } from './../../dialog-flow-client/dialog-flow.client';
 import { IMessage } from './../../models/message';
