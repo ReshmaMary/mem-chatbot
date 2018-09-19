@@ -23,7 +23,9 @@ export class ChatComponent {
     });
 
     client.textRequest(message.value).then((response) => {
-      var intentName = response.result.metadata['intentName'];
+      var parsedResult = JSON.parse(JSON.stringify(response.result));
+      var metadata  = parsedResult['metadata'];
+      var intentName = metadata['intentName'];
       if(intentName !=null && intentName!= undefined && this.payloadintents.includes(intentName))
       {
         var  messages = response.result.fulfillment['messages'];
