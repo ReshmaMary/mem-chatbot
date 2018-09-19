@@ -11,24 +11,41 @@ import { IMessage } from './../../models/message';
 export class ChatComponent {
 
   conversation: IMessage[] = [];
+  payloadintents = ["numem.admissions.deadlines","numem.program","numem.admission.requirements",
+"numem.admission.online","numem.tuition.cost","numem.stem","numem.curriculum","numem.course.catalog"];
   
-    addMessageFromUser(message) {
-      this.conversation.push({
-        avatar: 'perm_identity',
-        from: 'Me',
-        content: message.value,
-        link:null
-      });
-  
-      client.textRequest(message.value).then((response) => {
+  addMessageFromUser(message) {
+    this.conversation.push({
+      avatar: 'perm_identity',
+      from: 'Me',
+      content: message.value,
+      link:null
+    });
+
+    client.textRequest(message.value).then((response) => {
+      var intentName = response.result.metadata['intentName'];
+      if(intentName !=null && intentName!= undefined && this.payloadintents.includes(intentName))
+      {
+        var  messages = response.result.fulfillment['messages'];
+        if (messages != null && messages !== undefined){
+          var payload  =  messages[0]['payload']
+          };
+          this.conversation.push({
+            avatar: 'android',
+            from: 'Bot',
+            content: payload['fulfillmentText'] || 'I can\'t seem to figure that out!',
+            link:payload['link']
+          });
+      }
+      else{
         this.conversation.push({
           avatar: 'android',
           from: 'Bot',
           content: response.result.fulfillment['speech'] || 'I can\'t seem to figure that out!',
           link:null
         });
-        message.value = '';
-      });
-    }
-
+      }
+      message.value = '';
+    });
+  }
 }
