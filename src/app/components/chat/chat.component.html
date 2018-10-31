@@ -4,7 +4,7 @@
       <img alt="Northwestern University" class="mobile" src="https://images/structure/sprites/northwestern-logo-global-nav-small.svg"></a>
     </div>
 </div>
-<div style="overflow: scroll; height: 70%" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+<div style="overflow: scroll; height: auto" #scrollMe [scrollTop]="scrollMe.scrollHeight">
 <mat-list>
   <mat-list-item *ngFor="let message of conversation">
     <mat-icon matListIcon>{{ message.avatar }}</mat-icon>
