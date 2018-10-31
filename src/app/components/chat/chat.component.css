@@ -10,15 +10,15 @@
 .chat {
     list-style: none;
     background: none;
-    top:60px;
-    height: 80vh;
+    top:10%;
+    height: 80%;
     width: 100%;
     overflow-y: scroll;
-    padding-right: 17px;
+    padding-right: 5%;
 }
 
 mat-list {
-    height:90%;
+    height:80%;
 }
 
 mat-icon {
