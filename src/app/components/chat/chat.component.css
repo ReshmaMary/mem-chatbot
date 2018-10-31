@@ -12,14 +12,14 @@
     list-style: none;
     background: none;
     top:10%;
-    height: 80%;
+    height: 70%;
     width: 100%;
     overflow-y: scroll;
     padding-right: 5%;
 }
 
 mat-list {
-    height:80%;
+    height:70%;
 }
 
 mat-icon {
@@ -31,7 +31,8 @@ mat-icon {
 form {
     position: fixed;
     bottom: 0;
-    left: 33%;
+    top: 80%;
+    left: 10%;
 }
 
 ::ng-deep .mat-list .mat-list-item .mat-line{
@@ -73,8 +74,3 @@ form {
 #northwestern-logo .mobile {
     display: none;
 }
-/*
-::ng-deep .mat-list .mat-list-item{
-    height:initial!important;
-   }
- */
