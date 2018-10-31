@@ -38,7 +38,9 @@ form {
 ::ng-deep .mat-list .mat-list-item .mat-line{
    word-wrap: break-word;
    white-space: pre-wrap;
-   height:auto;
+   min-height:10%;
+    max-height: 70%;
+    height: 100%;
 }
 #northwestern-logo-wrapper-outer {
     background-color: #4E2A84;
