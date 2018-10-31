@@ -1,6 +1,6 @@
 .example-form {
     min-width:10%;
-    max-width: 50%;
+    max-width: 70%;
     width: 100%;
 }
 
@@ -30,7 +30,7 @@ mat-icon {
 
 form {
     position: fixed;
-    bottom: 0;
+    bottom: 2%;
     top: 80%;
     left: 10%;
 }
