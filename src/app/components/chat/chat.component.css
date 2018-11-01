@@ -8,7 +8,7 @@
     width: 100%;
     height:20%;
 }
-.chat {
+/*.chat {
     list-style: none;
     background: none;
     top:10%;
@@ -16,10 +16,10 @@
     width: 100%;
     overflow-y: scroll;
     padding-right: 5%;
-}
+}*/
 
 mat-list {
-    height:70%;
+    height:75%;
 }
 
 mat-icon {
