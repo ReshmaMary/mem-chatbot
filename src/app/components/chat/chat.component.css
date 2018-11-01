@@ -38,6 +38,7 @@ form {
 ::ng-deep .mat-list .mat-list-item .mat-line{
    word-wrap: break-word;
    white-space: inherit;
+   padding-bottom: 2vh;
 }
 #northwestern-logo-wrapper-outer {
     background-color: #4E2A84;
